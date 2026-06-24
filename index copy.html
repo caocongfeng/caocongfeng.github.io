@@ -118,7 +118,7 @@
       color: var(--text-main);
     }
 
-/*    .paper-card {
+    .paper-card {
       display: grid;
       grid-template-columns: 150px minmax(0, 1fr);
       gap: 18px;
@@ -128,17 +128,7 @@
       background: var(--bg-card);
       margin-bottom: 18px;
     }
-*/
-    .paper-card {
-      display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
-      gap: 18px;
-      padding: 16px;
-      border: 1px solid var(--border-light);
-      border-radius: 10px;
-      background: var(--bg-card);
-      margin-bottom: 18px;
-    }
+
     .paper-image-placeholder {
       width: 100%;
       min-height: 110px;
@@ -155,35 +145,6 @@
       box-sizing: border-box;
     }
 
-    /* Add PDF preview CSS here */
-/*    .paper-pdf-preview {
-      width: 100%;
-      height: 260px;
-      border: 1px solid var(--border-light);
-      border-radius: 8px;
-      background: #ffffff;
-      overflow: hidden;
-      display: block;
-      box-sizing: border-box;
-    }
-*/
-    .paper-pdf-preview {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: 1px solid var(--border-light);
-      border-radius: 8px;
-      background: #ffffff;
-      overflow: hidden;
-      display: block;
-      box-sizing: border-box;
-    }
-
-    .paper-pdf-preview iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      pointer-events: none;
-    }
     .paper-title {
       font-weight: 700;
       margin-bottom: 4px;
@@ -279,10 +240,6 @@
 
       .paper-card {
         grid-template-columns: 1fr;
-      }
-
-      .paper-pdf-preview {
-        aspect-ratio: 16 / 9;
       }
 
       .paper-image-placeholder {
@@ -388,13 +345,7 @@
       <div class="section-content">
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/fusion.pdf" target="_blank">
-            <iframe
-              src="assets/figures/fusion-training.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Fusion Training figure preview"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">
               <a href="https://aclanthology.org/2026.acl-srw.64/">Fusion Training for Mathematical Generalization in Large Language Models</a>
@@ -407,15 +358,7 @@
         </article>
 
         <article class="paper-card">
-          
-          <a class="paper-pdf-preview" href="assets/figures/Graph_CZ.pdf" target="_blank">
-            <iframe
-              src="assets/figures/Graph_CZ.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Graph_CZ"
-              loading="lazy">
-            </iframe>
-          </a>
-
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">
               <a href="https://lrec.elra.info/lrec2026-main-619">Graph-TempCZ: A Graph Representation of Software Mentions for Predicting Software Usage in Scientific Publications</a>
@@ -428,13 +371,7 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/alignment_graph_language.pdf" target="_blank">
-            <iframe
-              src="assets/figures/alignment_graph_language.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="alignment_graph_language"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">
               <a href="https://aclanthology.org/2025.ijcnlp-long.59/">How Aligned Are Unimodal Language and Graph Encodings of Chemical Molecules?</a>
@@ -454,13 +391,7 @@
       <div class="section-content">
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/softwareciter.pdf" target="_blank">
-            <iframe
-              src="assets/figures/softwareciter.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="softwareciter"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">SoftwareCiter: Agentic Generation of Verifiable Software Citations with a Metadata-Aware Benchmark</div>
             <div class="authors">Congfeng Cao, Yixian Shen, Kayle Verhiel, Jelke Bloem.</div>
@@ -470,13 +401,7 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/Molecule_generation.pdf" target="_blank">
-            <iframe
-              src="assets/figures/Molecule_generation.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Molecule_generation"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">Molecule Generation through Reasoning with Large Language Models</div>
             <div class="authors">Congfeng Cao, Di Wu, Jiahong Huang, Jelke Bloem, Khalil Sima'an.</div>
@@ -486,13 +411,7 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/RFM.pdf" target="_blank">
-            <iframe
-              src="assets/figures/RFM.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Fusion Training figure preview"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">Rethinking Feature Augmentation in Graph Contrastive Learning</div>
             <div class="authors">Congfeng Cao, Pengyu Zhang, Zeyu Zhang, Jelke Bloem.</div>
@@ -502,13 +421,7 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="assets/figures/ID_label.png" target="_blank">
-            <iframe
-              src="assets/figures/ID_label.png#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Fusion Training figure preview"
-              loading="lazy">
-            </iframe>
-          </a>
+          <div class="paper-image-placeholder">pic placeholder</div>
           <div>
             <div class="paper-title">A Graph-Based Analysis of Software Usage in Scientific Publications</div>
             <div class="authors">Congfeng Cao, Na Li, Kristy James, Jelke Bloem.</div>
