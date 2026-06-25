@@ -17,10 +17,6 @@
       --bg-card: #ffffff;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
       padding: 0;
@@ -31,44 +27,10 @@
       font-size: 16px;
     }
 
-    .site-shell {
-      max-width: 1320px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: grid;
-      grid-template-columns: 210px minmax(0, 1fr);
-      gap: 18px;
-      align-items: start;
-    }
-
     .page {
       max-width: 1050px;
-      margin: 0;
+      margin: 0 auto;
       padding: 42px 28px 60px;
-    }
-
-    .side-nav {
-      position: sticky;
-      top: 24px;
-      max-height: calc(100vh - 48px);
-      margin-top: 42px;
-      padding: 10px 0;
-      border-right: 1px solid var(--border-light);
-      overflow-y: auto;
-      font-size: 14px;
-    }
-
-    .side-nav a {
-      display: block;
-      padding: 5px 14px 5px 0;
-      color: var(--text-muted);
-      line-height: 1.25;
-    }
-
-    .side-nav a:hover,
-    .side-nav a:focus {
-      color: var(--link-blue);
-      text-decoration: none;
     }
 
     header {
@@ -121,11 +83,6 @@
       grid-template-columns: 185px minmax(0, 1fr);
       gap: 24px;
       margin-bottom: 24px;
-    }
-
-    .section,
-    header {
-      scroll-margin-top: 24px;
     }
 
     .section-title {
@@ -323,45 +280,6 @@
       color: var(--text-muted);
     }
 
-    @media (max-width: 960px) {
-      .site-shell {
-        display: block;
-        padding: 0;
-      }
-
-      .page {
-        max-width: 1050px;
-        margin: 0 auto;
-      }
-
-      .side-nav {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        display: flex;
-        gap: 6px;
-        max-height: none;
-        margin: 0;
-        padding: 8px 18px;
-        border-right: 0;
-        border-bottom: 1px solid var(--border-light);
-        background: #ffffff;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-      }
-
-      .side-nav a {
-        flex: 0 0 auto;
-        padding: 4px 8px;
-      }
-
-      .section,
-      header {
-        scroll-margin-top: 58px;
-      }
-    }
-
     @media (max-width: 760px) {
       .page {
         padding: 28px 18px 46px;
@@ -401,55 +319,19 @@
         min-height: 140px;
       }
     }
-
-    @media print {
-      .site-shell {
-        display: block;
-        max-width: none;
-        padding: 0;
-      }
-
-      .side-nav {
-        display: none;
-      }
-
-      .page {
-        max-width: none;
-        margin: 0;
-      }
-    }
   </style>
 </head>
 
 <body>
-  <div class="site-shell">
-    <nav class="side-nav" aria-label="Section navigation">
-      <a href="#about">About me</a>
-      <a href="#research-interests">Research interests</a>
-      <a href="#skills">Skills</a>
-      <a href="#research-experience">Research experience</a>
-      <a href="#industry-experience">Industry experience</a>
-      <a href="#selected-publications">Selected Publications</a>
-      <a href="#under-review">Under Review</a>
-      <a href="#grants">Grants</a>
-      <a href="#education">Education</a>
-      <a href="#presentations">Presentations</a>
-      <a href="#course-training">Course &amp; Training</a>
-      
-      <a href="#languages">Languages</a>
-      <a href="#collaboration">Collaboration</a>
-      <a href="#visitor-statistics">Visitor Statistics</a>
-    </nav>
-
-    <main class="page">
-    <header id="top">
+  <main class="page">
+    <header>
       <div class="header-row">
         <!-- <h1></h1> -->
         <h1>Congfeng Cao</h1>
         <div class="pronunciation">Pronounced: /ˈtsɔŋ.feŋ ˈtsaʊ/</div>
         <div class="pronunciation">Prefer: Feng /feŋ/</div>
-        <div class="pronunciation"><i><a href="https://scholar.google.com/citations?user=qypJhesAAAAJ&amp;hl=en">Google Scholar</a></i></div>
-        <div class="updated">Updated 18:08 June 25, 2026</div>
+        <div class="pronunciation"><i><a href="https://scholar.google.com/citations?user=qypJhesAAAAJ&hl=en">Google Scholar</a></i></div>
+        <div class="updated">Updated 17:17 June 25, 2026</div>
       </div>
 
       <div class="contact-grid">
@@ -462,7 +344,7 @@
         <div><strong>UvA Homepage:</strong> <a href="https://www.uva.nl/en/profile/c/a/c.cao/c.cao.html">Link</a></div>
       </div>
     </header>
-    <section class="section" id="about">
+    <section class="section">
       <div class="section-title">About me</div>
       <div class="section-content">
         <p>
@@ -471,28 +353,14 @@
       </div>
     </section>
 
-    <section class="section" id="research-interests">
+    <section class="section">
       <div class="section-title">Research interests</div>
       <div class="section-content">
         <p>LLM post-training and evaluation, retrieval-augmented generation, agentic systems, and integration with graph-based methods.</p>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-title">Skills</div>
-      <div class="section-content">
-        <div class="skills-block">
-          <strong>Programming</strong><br />
-          Proficient (10 years): Python, PyTorch, TensorFlow.<br />
-          Databases (10 years): SQL (MySQL, Oracle), PostgreSQL, NoSQL (Neo4J, MongoDB).<br />
-          Data science tools (10 years): Pandas, NumPy, Scikit-learn, Matplotlib, Polars, PySpark, Seaborn.<br />
-          Full-stack data science: data processing, feature engineering, model training, evaluation, visualization, and deployment.<br />
-          Familiar with: C/C++, Java. 
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="research-experience">
+    <section class="section">
       <div class="section-title">Research experience</div>
       <div class="section-content">
         <div class="entry">
@@ -526,7 +394,7 @@
       </div>
     </section>
 
-    <section class="section" id="industry-experience">
+    <section class="section">
       <div class="section-title">Industry experience</div>
       <div class="section-content">
         <div class="entry">
@@ -554,7 +422,7 @@
       </div>
     </section>
 
-    <section class="section" id="selected-publications">
+    <section class="section">
       <div class="section-title">Selected Publications</div>
       <div class="section-content">
 
@@ -617,7 +485,7 @@
       </div>
     </section>
 
-    <section class="section" id="under-review">
+    <section class="section">
       <div class="section-title">Under Review</div>
       <div class="section-content">
 
@@ -684,7 +552,7 @@
       </div>
     </section>
 
-    <section class="section" id="grants">
+    <section class="section">
       <div class="section-title">Grants</div>
       <div class="section-content">
         <div class="entry-line">
@@ -698,7 +566,7 @@
       </div>
     </section>
 
-    <section class="section" id="education">
+    <section class="section">
       <div class="section-title">Education</div>
       <div class="section-content">
         <div class="entry">
@@ -738,14 +606,14 @@
       </div>
     </section>
 
-    <section class="section" id="presentations">
+    <section class="section">
       <div class="section-title">Presentations</div>
       <div class="section-content">
         <p>ACL 2026, LREC 2026, IJCNLP-AACL 2025, EMNLP 2025, CLIN 2025, CLIN 2024, ELLIS 2024.</p>
       </div>
     </section>
 
-    <section class="section" id="course-training">
+    <section class="section">
       <div class="section-title">Course &amp; Training</div>
       <div class="section-content">
         <p>
@@ -762,16 +630,25 @@
       </div>
     </section>
 
-
-
-    <section class="section" id="languages">
-      <div class="section-title">Languages</div>
+    <section class="section">
+      <div class="section-title">Skills</div>
       <div class="section-content">
-        <p>Chinese (native), English (work language), Dutch (beginner).</p>
+        <div class="skills-block">
+          <strong>Programming</strong><br />
+          Proficient (10 years): Python, PyTorch, TensorFlow.<br />
+          Databases (10 years): SQL (MySQL, Oracle), PostgreSQL, NoSQL (Neo4J, MongoDB).<br />
+          Data science tools (10 years): Pandas, NumPy, Scikit-learn, Matplotlib, Polars, PySpark, Seaborn.<br />
+          Familiar with: C/C++, Java.
+        </div>
+
+        <div class="skills-block">
+          <strong>Languages</strong><br />
+          Chinese (native), English (work language), Dutch (beginner).
+        </div>
       </div>
     </section>
 
-    <section class="section" id="collaboration">
+    <section class="section">
       <div class="section-title">Collaboration</div>
       <div class="section-content">
         <div class="entry">
@@ -824,7 +701,7 @@
       </div>
     </section>
 
-    <section class="section" id="visitor-statistics">
+    <section class="section">
       <div class="section-title">Visitor Statistics</div>
       <div class="section-content">
         <div class="visitor-card">
@@ -842,7 +719,7 @@
           </div> -->
 
           <div class="visitor-map">
-            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=yJyHSfil1_KOikPP660tj6WXTEv5jQ7WS4ZSlWE4j1w&amp;cl=ffffff&amp;w=a"></script>
+            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=yJyHSfil1_KOikPP660tj6WXTEv5jQ7WS4ZSlWE4j1w&cl=ffffff&w=a"></script>
           </div>
 
         </div>
@@ -856,7 +733,6 @@
     <footer>
       © Congfeng Cao
     </footer>
-    </main>
-  </div>
+  </main>
 </body>
 </html>
