@@ -167,22 +167,36 @@
       box-sizing: border-box;
     }
 */
-    .paper-pdf-preview {
+    .paper-pdf-preview,
+    .paper-png-preview {
       width: 100%;
       aspect-ratio: 16 / 9;
+      height: 160px;
       border: 1px solid var(--border-light);
       border-radius: 8px;
       background: #ffffff;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       overflow: hidden;
       display: block;
       box-sizing: border-box;
     }
 
-    .paper-pdf-preview iframe {
+    .paper-pdf-preview iframe,
+    .paper-png-preview img {
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .paper-pdf-preview iframe {
       pointer-events: none;
+    }
+
+    .paper-png-preview img {
+      display: block;
+      object-fit: contain;
     }
     .paper-title {
       font-weight: 700;
@@ -281,8 +295,11 @@
         grid-template-columns: 1fr;
       }
 
-      .paper-pdf-preview {
+      .paper-pdf-preview,
+      .paper-png-preview {
         aspect-ratio: 16 / 9;
+        height: auto;
+        min-height: 180px;
       }
 
       .paper-image-placeholder {
@@ -387,12 +404,11 @@
       <div class="section-content">
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/fusion.pdf" target="_blank">
-            <iframe
-              src="assets/figures/fusion.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Fusion Training figure preview"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/fusion.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/fusion.png');">
+            <img
+              src="resize_images/fusion.png"
+              alt="Fusion Training figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">
@@ -407,12 +423,11 @@
 
         <article class="paper-card">
           
-          <a class="paper-pdf-preview" href="resize_images/Graph_CZ.png" target="_blank">
-            <iframe
-              src="assets/figures/Graph_CZ.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Graph_CZ"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/Graph_CZ.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/Graph_CZ.png');">
+            <img
+              src="resize_images/Graph_CZ.png"
+              alt="Graph-TempCZ figure preview"
+              loading="lazy" />
           </a>
 
           <div>
@@ -427,12 +442,11 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/alignment_graph_language.png" target="_blank">
-            <iframe
-              src="assets/figures/alignment_graph_language.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="alignment_graph_language"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/alignment_graph_language.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/alignment_graph_language.png');">
+            <img
+              src="resize_images/alignment_graph_language.png"
+              alt="Molecule graph and language alignment figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">
@@ -453,12 +467,11 @@
       <div class="section-content">
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/softwareciter.png" target="_blank">
-            <iframe
-              src="assets/figures/softwareciter.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="softwareciter"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/softwareciter.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/softwareciter.png');">
+            <img
+              src="resize_images/softwareciter.png"
+              alt="SoftwareCiter figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">SoftwareCiter: Agentic Generation of Verifiable Software Citations with a Metadata-Aware Benchmark</div>
@@ -469,12 +482,11 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/Molecule_generation.png" target="_blank">
-            <iframe
-              src="assets/figures/Molecule_generation.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Molecule_generation"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/Molecule_generation.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/Molecule_generation.png');">
+            <img
+              src="resize_images/Molecule_generation.png"
+              alt="Molecule generation figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">Molecule Generation through Reasoning with Large Language Models</div>
@@ -485,12 +497,11 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/RFM.png" target="_blank">
-            <iframe
-              src="assets/figures/RFM.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Molecule Generation"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/RFM.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/RFM.png');">
+            <img
+              src="resize_images/RFM.png"
+              alt="Random Feature Masking figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">Rethinking Feature Augmentation in Graph Contrastive Learning</div>
@@ -501,12 +512,11 @@
         </article>
 
         <article class="paper-card">
-          <a class="paper-pdf-preview" href="resize_images/ID_label.png" target="_blank">
-            <iframe
-              src="assets/figures/ID_label.png#page=1&toolbar=0&navpanes=0&scrollbar=0"
-              title="Software Usage"
-              loading="lazy">
-            </iframe>
+          <a class="paper-png-preview" href="assets/figures/ID_label.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/ID_label.png');">
+            <img
+              src="resize_images/ID_label.png"
+              alt="Software usage figure preview"
+              loading="lazy" />
           </a>
           <div>
             <div class="paper-title">A Graph-Based Analysis of Software Usage in Scientific Publications</div>
