@@ -47,7 +47,7 @@
       padding: 42px 28px 60px;
     }
 
-    .sidebar {
+    .side-nav {
       position: sticky;
       top: 24px;
       max-height: calc(100vh - 48px);
@@ -56,10 +56,6 @@
       border-right: 1px solid var(--border-light);
       overflow-y: auto;
       font-size: 14px;
-    }
-
-    .side-nav {
-      margin-bottom: 16px;
     }
 
     .side-nav a {
@@ -111,52 +107,6 @@
       font-size: 15px;
     }
 
-    .news-sidebar {
-      margin: 0 14px 0 0;
-      padding: 14px 16px 16px;
-      border-left: 3px solid var(--main-green);
-      border-radius: 8px;
-      background: var(--bg-light);
-      box-sizing: border-box;
-    }
-
-    .news-title {
-      margin: 0 0 12px;
-      color: var(--main-green);
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-
-    .news-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .news-item {
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border-light);
-    }
-
-    .news-item:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
-
-    .news-date {
-      margin-bottom: 4px;
-      color: var(--text-main);
-      font-weight: 700;
-    }
-
-    .news-text {
-      font-size: 14px;
-      line-height: 1.45;
-    }
-
     a {
       color: var(--link-blue);
       text-decoration: none;
@@ -174,8 +124,7 @@
     }
 
     .section,
-    header,
-    .news-sidebar {
+    header {
       scroll-margin-top: 24px;
     }
 
@@ -380,10 +329,6 @@
         padding: 0;
       }
 
-      .sidebar {
-        display: contents;
-      }
-
       .page {
         max-width: 1050px;
         margin: 0 auto;
@@ -411,13 +356,8 @@
         padding: 4px 8px;
       }
 
-      .news-sidebar {
-        margin: 12px 18px 0;
-      }
-
       .section,
-      header,
-      .news-sidebar {
+      header {
         scroll-margin-top: 58px;
       }
     }
@@ -483,40 +423,23 @@
 
 <body>
   <div class="site-shell">
-    <aside class="sidebar">
-      <nav class="side-nav" aria-label="Section navigation">
-        <h4 class="visually-hidden">Navigation</h4>
-        <a href="#about">About me</a>
-        <a href="#research-interests">Research interests</a>
-        <a href="#skills">Skills</a>
-        <a href="#research-experience">Research experience</a>
-        <a href="#industry-experience">Industry experience</a>
-        <a href="#selected-publications">Selected Publications</a>
-        <a href="#under-review">Under Review</a>
-        <a href="#grants">Grants</a>
-        <a href="#education">Education</a>
-        <a href="#presentations">Presentations</a>
-        <a href="#course-training">Course &amp; Training</a>
-        
-        <a href="#languages">Languages</a>
-        <a href="#collaboration">Collaboration</a>
-        <a href="#visitor-statistics">Visitor Statistics</a>
-      </nav>
-
-      <section class="news-sidebar" id="news" aria-labelledby="news-title">
-        <h2 class="news-title" id="news-title">🔥 News</h2>
-        <ul class="news-list">
-          <li class="news-item">
-            <div class="news-date">Apr. 2026</div>
-            <div class="news-text">🎉 Paper accepted: <a href="https://aclanthology.org/2026.acl-srw.64/">Fusion Training for Mathematical Generalization in Large Language Models</a> (<em>ACL 2026 SRW</em>).</div>
-          </li>
-          <li class="news-item">
-            <div class="news-date">Feb. 2026</div>
-            <div class="news-text">🎉 Paper accepted: <a href="https://lrec.elra.info/lrec2026-main-619">Graph-TempCZ: A Graph Representation of Software Mentions for Predicting Software Usage in Scientific Publications</a> (<em>LREC 2026</em>).</div>
-          </li>
-        </ul>
-      </section>
-    </aside>
+    <nav class="side-nav" aria-label="Section navigation">
+      <a href="#about">About me</a>
+      <a href="#research-interests">Research interests</a>
+      <a href="#skills">Skills</a>
+      <a href="#research-experience">Research experience</a>
+      <a href="#industry-experience">Industry experience</a>
+      <a href="#selected-publications">Selected Publications</a>
+      <a href="#under-review">Under Review</a>
+      <a href="#grants">Grants</a>
+      <a href="#education">Education</a>
+      <a href="#presentations">Presentations</a>
+      <a href="#course-training">Course &amp; Training</a>
+      
+      <a href="#languages">Languages</a>
+      <a href="#collaboration">Collaboration</a>
+      <a href="#visitor-statistics">Visitor Statistics</a>
+    </nav>
 
     <main class="page">
     <header id="top">
@@ -526,11 +449,11 @@
         <div class="pronunciation">Pronounced: /ˈtsɔŋ.feŋ ˈtsaʊ/</div>
         <div class="pronunciation">Prefer: Feng /feŋ/</div>
         <div class="pronunciation"><i><a href="https://scholar.google.com/citations?user=qypJhesAAAAJ&amp;hl=en">Google Scholar</a></i></div>
-        <div class="updated">Updated 19:19 June 26, 2026</div>
+        <div class="updated">Updated 06:06 June 26, 2026</div>
       </div>
 
       <div class="contact-grid">
-        <div><strong>Email:</strong> <a href="mailto:c.cao@uva.nl">c[dot]cao[at]uva.nl</a></div>
+        <div><strong>Email:</strong> <a href="mailto:c[dot]cao[at]uva.nl">ccao[at]uva.nl</a></div>
         <div><strong><a href="https://github.com/caocongfeng">GitHub</a></strong></div>
         <div><strong>Office:</strong> SP.Lab42 L6.58</div>
 
@@ -539,14 +462,13 @@
         <div><strong>UvA Homepage:</strong> <a href="https://www.uva.nl/en/profile/c/a/c.cao/c.cao.html">Link</a></div>
       </div>
     </header>
-
     <section class="section" id="about">
       <div class="section-title">About me <br /><span class="job-market-badge">‼️ On the job market</span> <br /></div>
       <div class="section-content">
-        <!-- <span class="job-market-badge">‼️ On the job market</span> <br /> -->
-        <p>I am a final-year PhD student in the <a href="https://www.illc.uva.nl/Research/Organisation/Research-Units/NLP/">NLP Unit</a> at <a href="https://www.illc.uva.nl/">the Institute for Logic, Language and Computation (ILLC)</a>, University of Amsterdam. Supervised by <a href="https://www.illc.uva.nl/People/person/2092/Prof-dr-Khalil-Sima-an"> Prof. Dr. Khalil Sima’an</a> and <a href="https://www.illc.uva.nl/People/person/4826/Dr-Jelke-Bloem">Dr. Jelke Bloem</a>. My research focuses on LLM post-training and evaluation, and the coordination and alignment between language models and graph models.</p>
-        <p>Before my PhD, I worked in industry as a machine learning researcher and team leader, building NLP, knowledge graph, text mining, and question-answering systems for real-world applications. </p>
-        <p>My technical experience includes Python, PyTorch, TensorFlow, LLM fine-tuning, graph neural networks, retrieval systems, agentic workflows, full-stack data science, and databases (SQL and NoSQL).</p>
+        <p>
+          <!-- <span class="job-market-badge">‼️ On the job market</span> <br /> -->
+          <p>I am a final-year PhD student in the <a href="https://www.illc.uva.nl/Research/Organisation/Research-Units/NLP/">NLP Unit</a> at <a href="https://www.illc.uva.nl/">the Institute for Logic, Language and Computation (ILLC)</a>, University of Amsterdam. Supervised by <a href="https://www.illc.uva.nl/People/person/2092/Prof-dr-Khalil-Sima-an"> Prof. Dr. Khalil Sima’an</a> and <a href="https://www.illc.uva.nl/People/person/4826/Dr-Jelke-Bloem">Dr. Jelke Bloem</a>. My research focuses on LLM post-training and evaluation, and the coordination and alignment between language models and graph models.</p>
+          <p></p>Before my PhD, I worked in industry as a machine learning researcher and team leader, building NLP, knowledge graph, text mining, and question-answering systems for real-world applications. My technical experience includes Python, PyTorch, TensorFlow, LLM fine-tuning, graph neural networks, retrieval systems, agentic workflows, full-stack data science, and databases (SQL and NoSQL).</p>
       </div>
     </section>
 
@@ -615,7 +537,7 @@
             <div class="date">January 2021 - October 2022</div>
           </div>
           <p>
-            Team Leader in Conversation Service Group. Responsible for building an automated customer question-answering system, leading the team, and managing projects. Developed service robots equipped with a question-answering system to assist customers in business halls with inquiries, payments, and service guidance <a href="https://youtu.be/JPEnSjqAR1w">[Video]</a>
+            Team Leader in Conversation Service Group. Responsible for building an automated customer question-answering system, leading the team, and managing projects. Service robots equipped with the QA system <a href="https://youtu.be/JPEnSjqAR1w">[Video]</a>
             <a href="https://mp.weixin.qq.com/s/O24ma2six4NFzundyXlMeg?scene=1">[Description]</a>.
           </p>
         </div>
