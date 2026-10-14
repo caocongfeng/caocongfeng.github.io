@@ -725,7 +725,7 @@
               <a href="https://openreview.net/forum?id=no28ZFcXXB">Molecule Generation through Reasoning with Large Language Models</a>
               (<em>AACL-IJCNLP 2026</em>)
             </div>
-            <div class="authors">Congfeng Cao<sup>*</sup>, Di Wu<sup>*</sup>, Jiahong Huang, Jelke Bloem, Khalil Sima'an.</div>
+            <div class="authors">Congfeng Cao<sup>*</sup>, Di Wu<sup>*</sup>, Zhi Zhang, Jia-Hong Huang, Jelke Bloem, Khalil Sima'an.</div>
             <div class="paper-detail"><strong>Contribution:</strong> Frames molecule generation as a step-by-step reasoning task and introduces MolCoT-4K and MolGeneration to improve SMILES generation from molecular descriptions.</div>
             <div class="paper-detail"><strong>Technical:</strong> Reasoning-based molecule generation; curated CoT dataset MolCoT-4K; Qwen2.5-7B fine-tuning; SFT plus GRPO-based reinforcement learning; molecule-specific rewards including exact match, SMILES validity via RDKit, and format reward; evaluation using Validity, RDK-FTS, EM, Pass@N; OpenAI API, Gemini API, Claude API, and DeepSeek API.</div>
           </div>
@@ -811,6 +811,7 @@
           </div>
         </article>
 
+        <!-- Hidden for now: Correct Answers, Incorrect Reasoning
         <article class="paper-card">
           <a class="paper-png-preview" href="assets/figures/cot_correctness.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/cot_correctness.png');">
             <img
@@ -820,12 +821,12 @@
           </a>
           <div>
             <div class="paper-title">Correct Answers, Incorrect Reasoning: Does Distilled CoT Correctness Matter for LLM Post-Training in Molecule Generation?</div>
-            <!-- TODO: fill in the full author list -->
             <div class="authors">Congfeng Cao<sup>*</sup>, et al.</div>
             <div class="paper-detail"><strong>Contribution:</strong> Shows that distilled chain-of-thought data with correct final molecules often contains chemically incorrect reasoning, and that correcting this reasoning improves LLM post-training for molecule generation.</div>
             <div class="paper-detail"><strong>Technical:</strong> MolCoT-Paired-4K paired dataset of original and curated CoT; controlled comparison of CoT correctness; SFT and GRPO post-training; five model families and six scales from 0.8B to 35B parameters; evaluation of molecule generation quality and CoT chemical correctness.</div>
           </div>
         </article>
+        -->
 
         <article class="paper-card">
           <a class="paper-png-preview" href="assets/figures/softwareciter.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/softwareciter.png');">
