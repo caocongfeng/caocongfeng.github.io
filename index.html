@@ -574,6 +574,10 @@
         <h2 class="news-title" id="news-title">🔥 News</h2>
         <ul class="news-list">
           <li class="news-item">
+            <div class="news-date">Oct. 2026</div>
+            <div class="news-text">🎉 Paper accepted: <a href="https://openreview.net/forum?id=no28ZFcXXB">Molecule Generation through Reasoning with LLMs</a> (<em>AACL-IJCNLP 2026</em>).</div>
+          </li>
+          <li class="news-item">
             <div class="news-date">July. 2026</div>
             <div class="news-text">I am Session Chair of the Language Modeling virtual track at ACL 2026. See you there!</div>
           </li>
@@ -710,6 +714,24 @@
       <div class="section-content">
 
         <article class="paper-card">
+          <a class="paper-png-preview" href="assets/figures/Molecule_generation.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/Molecule_generation.png');">
+            <img
+              src="resize_images/Molecule_generation.png"
+              alt="Molecule generation figure preview"
+              loading="lazy" />
+          </a>
+          <div>
+            <div class="paper-title">
+              <a href="https://openreview.net/forum?id=no28ZFcXXB">Molecule Generation through Reasoning with Large Language Models</a>
+              (<em>AACL-IJCNLP 2026</em>)
+            </div>
+            <div class="authors">Congfeng Cao<sup>*</sup>, Di Wu<sup>*</sup>, Jiahong Huang, Jelke Bloem, Khalil Sima'an.</div>
+            <div class="paper-detail"><strong>Contribution:</strong> Frames molecule generation as a step-by-step reasoning task and introduces MolCoT-4K and MolGeneration to improve SMILES generation from molecular descriptions.</div>
+            <div class="paper-detail"><strong>Technical:</strong> Reasoning-based molecule generation; curated CoT dataset MolCoT-4K; Qwen2.5-7B fine-tuning; SFT plus GRPO-based reinforcement learning; molecule-specific rewards including exact match, SMILES validity via RDKit, and format reward; evaluation using Validity, RDK-FTS, EM, Pass@N; OpenAI API, Gemini API, Claude API, and DeepSeek API.</div>
+          </div>
+        </article>
+
+        <article class="paper-card">
           <a class="paper-png-preview" href="assets/figures/fusion.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/fusion.png');">
             <img
               src="resize_images/fusion.png"
@@ -773,6 +795,39 @@
       <div class="section-content">
 
         <article class="paper-card">
+          <a class="paper-png-preview" href="assets/figures/searchjev.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/searchjev.png');">
+            <img
+              src="resize_images/searchjev.png"
+              alt="SearchJev dual-system search agent figure preview"
+              loading="lazy" />
+          </a>
+          <div>
+            <div class="paper-title">
+              <a href="https://arxiv.org/abs/2610.05107">SearchJev: A Fast and Calibrated System-1 Model for Search Agents</a>
+            </div>
+            <div class="authors">Congfeng Cao<sup>*</sup>, Lipeng Zuo, Konstantinos Papakostas, Qiwei Xu, Songwei Xu, Lun Zhou, Zhaochun Ren, Yougang Lyu, Xiaohui Yan.</div>
+            <div class="paper-detail"><strong>Contribution:</strong> Introduces SearchJev, a calibrated System-1 model that handles short search decisions without autoregressive generation and delegates uncertain judgments to System-2 reasoning, together with the SearchDecision-Bench benchmark.</div>
+            <div class="paper-detail"><strong>Technical:</strong> Dual-system search agent; option scoring over a decision schema; Soft-Label Learning for Calibrated Decisions (SLCD); SearchDecision-Bench covering six search decision types; comparison with same-size Qwen3.5 autoregressive models; 5.2-5.3x faster decisions and 41-74% lower ECE; 3.7-4.7x active search speedup and accuracy up to 54% on BrowseComp-Plus.</div>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <a class="paper-png-preview" href="assets/figures/cot_correctness.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/cot_correctness.png');">
+            <img
+              src="resize_images/cot_correctness.png"
+              alt="CoT correctness molecule generation figure preview"
+              loading="lazy" />
+          </a>
+          <div>
+            <div class="paper-title">Correct Answers, Incorrect Reasoning: Does Distilled CoT Correctness Matter for LLM Post-Training in Molecule Generation?</div>
+            <!-- TODO: fill in the full author list -->
+            <div class="authors">Congfeng Cao<sup>*</sup>, et al.</div>
+            <div class="paper-detail"><strong>Contribution:</strong> Shows that distilled chain-of-thought data with correct final molecules often contains chemically incorrect reasoning, and that correcting this reasoning improves LLM post-training for molecule generation.</div>
+            <div class="paper-detail"><strong>Technical:</strong> MolCoT-Paired-4K paired dataset of original and curated CoT; controlled comparison of CoT correctness; SFT and GRPO post-training; five model families and six scales from 0.8B to 35B parameters; evaluation of molecule generation quality and CoT chemical correctness.</div>
+          </div>
+        </article>
+
+        <article class="paper-card">
           <a class="paper-png-preview" href="assets/figures/softwareciter.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/softwareciter.png');">
             <img
               src="resize_images/softwareciter.png"
@@ -784,21 +839,6 @@
             <div class="authors">Congfeng Cao<sup>*</sup>, Yixian Shen, Kayle Verhiel, Jelke Bloem.</div>
             <div class="paper-detail"><strong>Contribution:</strong> Proposes a multi-agent framework for generating complete and verifiable software citations from incomplete software mentions in scientific papers, supported by the metadata-aware SoftwareCiteBench benchmark.</div>
             <div class="paper-detail"><strong>Technical:</strong> Multi-agent LLM framework; LangChain; OpenAI API; publication parsing; software metadata extraction; missing-field planning; external metadata search from web/GitHub/Zenodo/official pages; FORCE11-style citation construction; citation verification; evaluated with GPT-5-mini and LLM-as-a-Judge on SoftwareCiteBench.</div>
-          </div>
-        </article>
-
-        <article class="paper-card">
-          <a class="paper-png-preview" href="assets/figures/Molecule_generation.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url('resize_images/Molecule_generation.png');">
-            <img
-              src="resize_images/Molecule_generation.png"
-              alt="Molecule generation figure preview"
-              loading="lazy" />
-          </a>
-          <div>
-            <div class="paper-title">Molecule Generation through Reasoning with Large Language Models</div>
-            <div class="authors">Congfeng Cao<sup>*</sup>, Di Wu<sup>*</sup>, Jiahong Huang, Jelke Bloem, Khalil Sima'an.</div>
-            <div class="paper-detail"><strong>Contribution:</strong> Frames molecule generation as a step-by-step reasoning task and introduces MolCoT-4K and MolGeneration to improve SMILES generation from molecular descriptions.</div>
-            <div class="paper-detail"><strong>Technical:</strong> Reasoning-based molecule generation; curated CoT dataset MolCoT-4K; Qwen2.5-7B fine-tuning; SFT plus GRPO-based reinforcement learning; molecule-specific rewards including exact match, SMILES validity via RDKit, and format reward; evaluation using Validity, RDK-FTS, EM, Pass@N; OpenAI API, Gemini API, Claude API, and DeepSeek API.</div>
           </div>
         </article>
 
