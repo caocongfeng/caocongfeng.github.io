@@ -1,2 +1,12 @@
+# Only the public homepage (and the thumbnails it shows) may be crawled; everything else is blocked.
 User-agent: *
-Allow: /
+Allow: /$
+Allow: /index.html$
+Allow: /resize_images/Graph_CZ.png$
+Allow: /resize_images/ID_label.png$
+Allow: /resize_images/Molecule_generation.png$
+Allow: /resize_images/RFM.png$
+Allow: /resize_images/alignment_graph_language.png$
+Allow: /resize_images/fusion.png$
+Allow: /resize_images/softwareciter.png$
+Disallow: /
